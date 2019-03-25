@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "getch.c"
 
 int main()
 {
@@ -42,6 +41,6 @@ int main()
         printf("do you want to continue? y/n?\n");
         scanf("%s", &option);
     } while (option == 'y');
-    printf("Good bye");
+    printf("Good bye\n");
     return 0;
 }
