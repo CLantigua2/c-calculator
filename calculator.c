@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
+// #include <conio.h>
 
 int main()
 {
@@ -9,34 +9,34 @@ int main()
     printf("press 2 for subtraction\n");
     printf("press 3 for multiplication\n");
     printf("press 4 for division\n");
-    scanf("&d", &n);
+    scanf("%d", &n);
     printf("please enter a number\n");
-    scanf("&d", &num1);
+    scanf("%d", &num1);
     printf("please enter a second number\n");
-    scanf("&d", &num2);
+    scanf("%d", &num2);
     switch (n)
     {
     case 1:
-        result += num1 + num2;
-        print("addition of two numbers is %d", result);
+        result = num1 + num2;
+        printf("addition of two numbers is %d\n", result);
         break;
     case 2:
-        result += num1 - num2;
-        print("subtraction of two numbers is %d", result);
+        result = num1 - num2;
+        printf("subtraction of two numbers is %d\n", result);
         break;
     case 3:
-        result += num1 * num2;
-        print("multiplication of two numbers is %d", result);
+        result = num1 * num2;
+        printf("multiplication of two numbers is %d\n", result);
         break;
     case 4:
-        result += num1 * num2;
-        print("division of two numbers is %d", result);
+        result = num1 * num2;
+        printf("division of two numbers is %d\n", result);
         break;
 
     default:
-        printf("wrong input");
+        printf("wrong input\n");
         break;
     }
-    getch();
+
     return 0;
 }
